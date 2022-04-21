@@ -32,28 +32,3 @@ loss_plot_data=summarized_results[["Federated Loss","Centralized Loss"]]
 loss_plot=sns.lineplot(data=loss_plot_data)
 plt.savefig("loss plot seaborn.png", bbox_inches="tight")
 plt.clf()
-
-#print(centralized_results)
-#print(federated_results)
-
-#summarized_results=results.groupby(['Number of Clients',"Centralized"]).mean()
-#print(summarized_results)
-
-#accuracy_plot_data = summarized_results.pivot('Number of Clients',"Centralized", "Accuracy")
-#print(accuracy_plot_data)
-
-#accuracy_plot=sns.lineplot(data=accuracy_plot_data)
-#plt.savefig("accuracy plot seaborn.png", bbox_inches="tight")
-
-#accuracy_plot=sns.lineplot(data=[centralized_results["Accuracy"],federated_results["Accuracy"]])
-#accuracy_plot.set_xticklabels(accuracy_plot.get_xticklabels(), rotation=90)
-#plt.legend([],[], frameon=False)
-#plt.savefig("accuracy plot seaborn.png", bbox_inches="tight")
-#plt.clf()
-
-#specified_colour_count=colour_count[specified_colours]
-#grafico=sns.barplot(specified_colour_count.index.tolist(), specified_colour_count.values.tolist(),hue=specified_colour_count.index.tolist(), palette=colour_dictionary,dodge = False,linewidth=1,edgecolor=".2")
-#plt.legend([],[], frameon=False) 
-#if label=="name":
-#grafico.set_xticklabels(grafico.get_xticklabels(), rotation=90)
-#plt.savefig(output_file+" "+label+".png", bbox_inches="tight")
